@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Swap</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background: url("../../static/img/wallpapertwo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            opacity: 0.8;
+        }
+        header nav i {
+            font-size: 30px;
+            background-color: black;
+            padding: 1%;
+            border-radius: 50%;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <p><a href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></p>
+        </nav>
+    </header><hr>
+
+    <main>
+        <h2><b>SWAP</b></h2>
+    </main>
+
+    <footer>
+        <form action="">
+            <div id="footerone" class="all">
+                <div id="footersendone" class="allone">
+                    <p>send</p>
+                    <select name="" id="">
+                        <option value="">select</option><hr>
+                        <option value="bitcoin">Bitcion</option>
+                        <option value="notcoin">Notcoin</option>
+                        <option value="yescoin">Yescoin</option>
+                    </select>
+                </div>
+                <div id="footersendtwo">
+                    <input type="number" name="" id="">
+                </div>
+            </div>
+
+            <div id="footermidle">
+                <p><b><i><i class="fa fa-exchange" aria-hidden="true"></i></i></b></p>
+            </div>
+    
+            <div id="footertwo" class="all">
+                <div id="footerrecieve" class="allone">
+                    <p>recieve</p>
+                    <select name="" id="">
+                        <option value="">select</option><hr>
+                        <option value="bitcoin">Bitcion</option>
+                        <option value="notcoin">Notcoin</option>
+                        <option value="yescoin">Yescoin</option>
+                    </select>
+                </div>
+                <div id="footerrecievetwo">
+                    <input type="number" name="" id="">
+                </div>
+            </div>
+            <div id="footersubmit">
+                <input type="submit" name="" id="">
+            </div>
+        </form>
+    </footer>
+
+    <style>
+        #footermidle {
+            margin: 0;
+        }
+        #footermidle p {
+            text-align: right;
+            align-items: right;
+            margin-right: 25%;
+            animation: rotate;
+
+        }
+        #footermidle p i {
+            font-size: 20px;
+            margin: 0;
+            animation: rotate;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate {
+            from{
+                transform: rotate(-360deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #footersubmit input {
+            width: 100%;
+            text-align: center;
+            margin: 10% 0 10% 0;
+            padding: 5%;
+            border: none;
+            border-radius: 5%;
+            background-color: black;
+            border:  2px solid white;
+            color: white;
+        }
+        .all {
+            display: flex;
+            justify-content: space-between;
+            background: #ccc;
+            margin: 5px 0 10px 0;
+            color: black;
+            opacity: 0.6;
+            border: none;
+            border-radius: 5%;
+        }
+        .allone p {
+            font-size: 20px;
+            padding: 10px;
+            margin: 0;
+        }
+        .allone select {
+            border: none;
+            background: #ccc;
+            margin-bottom: 5px;
+            margin-left: 5px;
+
+            width: 100%;
+            padding: 5%;
+            border: none;
+            border-radius: 5%;
+        }
+        .all input {
+            align-items: center;
+            width: 20%;
+            height: 5vh;
+            padding-right: 60%;
+            margin-top: 7%;
+        }
+    </style>
+
+</body>
+
+<script src="../all.js"></script>
+</html>

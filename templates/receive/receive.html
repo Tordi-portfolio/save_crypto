@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Receive</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background: url("../../static/img/wallpaperthree.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            opacity: 0.8;
+        }
+        header nav i {
+            font-size: 30px;
+            background-color: black;
+            padding: 1%;
+            border-radius: 50%;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></p>
+        </nav>
+    </header><hr>
+
+    <main>
+        <div id="mainone">
+            <h3>Receive Bitcoin</h3>
+            <p>Send only Bitcoin and Ethereum to thisnaddress in Blockchain network to this address, or you might loose your funds!!</p>
+        </div>
+    </main>
+
+    <footer>
+        <form action="">
+            <div class="container">
+                <input type="text" id="inputField" placeholder="Paste your code here">
+                <button id="pasteButton">Paste Code</button>
+            </div>
+        </form>
+    </footer>
+
+    <style>
+        .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#inputField {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#pasteButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#pasteButton:hover {
+  background-color: #0056b3;
+}
+form {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  opacity: 0.8;
+}
+    </style>
+
+</body>
+
+<script>
+    // script.js
+    document.getElementById('pasteButton').addEventListener('click', async () => {
+    try {
+        const text = await navigator.clipboard.readText();
+        document.getElementById('inputField').value = text;
+    } catch (err) {
+        console.error('Failed to read clipboard contents: ', err);
+    }
+});
+
+</script>
+
+<script src="../all.js"></script>
+</html>
